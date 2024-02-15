@@ -3,66 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>horario.html</title>
+    <title>Horario Escolar</title>
    <style>
-    table {
-    width: 80%;
-    border-collapse: collapse;
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
     }
+
+    table {
+        width: 80%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        box-shadow: 0 2px 5px rgba(6, 0, 0, 0.1);
+        background-color: #fefafa;
+    }
+
     th, td {
-        border: 1px solid #181111;
-        padding: 10px;
+        border: 1px solid #060606;
+        padding: 12px;
         text-align: center;
     }
 
     th {
-        background-color: #1e7120;
-        color: rgb(0, 0, 0);
+        background-color: #4CAF50;
+        color: white;
+        text-transform: uppercase;
     }
 
     td {
-        background-color: #f6f6f6;
+        background-color: #f9f9f9;
+    }
+
+    .subject {
+        font-weight: bold;
     }
 
     .M4 {
-        background-color: #899194;
+        background-color: #ffa94d;
     }
 
     .M7 {
-        background-color: #e23077;
+        background-color: #66cccc;
     }
 
     .M6 {
-        background-color: #9db429;
+        background-color: #ff6666;
     }
 
     .M11 {
-        background-color: #919dd4;
+        background-color: #6666ff;
     }
 
     .M121 {
-        background-color: #5aa054;
+        background-color: #99ff99;
     }
 
     .M122 {
-        background-color: #60626d;
+        background-color: #ff9999;
     }
 
     .M8 {
-        background-color: #7821f1;
+        background-color: #cc66ff;
     }
 
     .tutoria {
-        background-color: #1b3a15;
+        background-color: #ffcc66;
     }
     .patio {
-        background-color: #e69119;
+        background-color: #7e0707;
     }
 </style>
 </head>
 <body>
-    <table><!-- sirve para crear filas de tablas -->
-        <thead><!--delimita el encabezado de la tabla -->
+    <table>
+        <thead>
             <tr>
                 <th>Hora</th>
                 <th>Lunes</th>
@@ -72,42 +88,42 @@
                 <th>Viernes</th>
             </tr>
         </thead>
-        <tbody> <!-- Contenido de las filas y celdas del cuerpo de la tabla -->
+        <tbody>
             <tr>
                 <td>15:00 - 15:55</td>
-                <td class="M4" rowspan="2">M4</td>  <!--sirve para poner celdas juntas verticalmente -->
-                <td class="M122" rowspan="2">M12.2</td>
+                <td class="M4 subject" rowspan="2">M4</td>
+                <td class="M122 subject" rowspan="2">M12.2</td>
                 <td></td>
-                <td class="M7" rowspan="2">M7</td>
-                <td class="M8" rowspan="2">M8</td>
+                <td class="M7 subject" rowspan="2">M7</td>
+                <td class="M8 subject" rowspan="2">M8</td>
             </tr>
             <tr>
                 <td>15:55 - 16:50</td>
             </tr>
             <tr>
                 <td>16:50 - 17:45</td>
-                <td class="M121" rowspan="2">M12.1</td>
-                <td class="M4" rowspan="2">M4</td>
-                <td class="M11">M11</td>
-                <td class="M121">M12.1</td>
-                <td class="M11">M11</td>
+                <td class="M121 subject" rowspan="2">M12.1</td>
+                <td class="M4 subject" rowspan="2">M4</td>
+                <td class="M11 subject">M11</td>
+                <td class="M121 subject">M12.1</td>
+                <td class="M11 subject">M11</td>
             </tr>
             <tr>
                 <td>17:45 - 18:40</td>
-                <td class="M121">M12.1</td>
-                <td class="M11">M11</td>
-                <td class="tutoria">Tutoria</td>
+                <td class="M121 subject">M12.1</td>
+                <td class="M11 subject">M11</td>
+                <td class="tutoria subject">Tutoria</td>
             </tr>
             <tr>
                 <td>18:40 - 19:10</td>
-                <td class="patio" colspan="5">PATIO</td> <!--sirve para juntar celdas  horizontales-->
+                <td class="patio subject" colspan="5">Patio</td>
             </tr>
             <tr>
                 <td>19:10 - 20:05</td>
-                <td class="M7" rowspan="2">M7</td>
-                <td class="M6" rowspan="2">M06</td>
-                <td class="M122" rowspan="2">M12.2</td>
-                <td class="M7">M7</td>
+                <td class="M7 subject" rowspan="2">M7</td>
+                <td class="M6 subject" rowspan="2">M6</td>
+                <td class="M122 subject" rowspan="2">M12.2</td>
+                <td class="M7 subject">m7</td>
                 <td></td>
             </tr>
             <tr>
